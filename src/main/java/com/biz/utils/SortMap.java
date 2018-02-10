@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * @author zzt
  * 2018年2月8日
- * Description: 
+ * Description: 集合排序工具类
  */
  public class SortMap implements Comparator{
 	

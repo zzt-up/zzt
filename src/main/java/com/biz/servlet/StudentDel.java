@@ -7,7 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.biz.service.StudentService;
-
+/**
+ * 
+ * @author zzt
+ * 2018年2月10日
+ * Description:学生删除
+ */
 public class StudentDel extends HttpServlet {
 	StudentService Stu=new StudentService();
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

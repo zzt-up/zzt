@@ -7,7 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.biz.service.StudentService;
-
+/**
+ * 
+ * @author zzt
+ * 2018年2月10日
+ * Description:学生修改第二步，指定页面修改提交
+ */
 public class StudentModifyPush extends HttpServlet {
 	StudentService stu=new StudentService();
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

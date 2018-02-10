@@ -10,7 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.biz.service.StudentService;
-
+/**
+ * 
+ * @author zzt
+ * 2018年2月10日
+ * Description:学生修改第一步，先等到学生信息发送到指定页面
+ */
 public class StudentModifyGet extends HttpServlet {
 	StudentService Stu=new StudentService();
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -18,7 +23,6 @@ public class StudentModifyGet extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		response.getWriter().write("hello zzt...");
 		String id=request.getParameter("id");
-		System.out.println(id);
 		ArrayList<Map<String,String>> list=new ArrayList<Map<String,String>>();
 		list=Stu.StudentModify(id);
 		request.setAttribute("list", list);
